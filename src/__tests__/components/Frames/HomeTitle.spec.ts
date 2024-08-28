@@ -16,6 +16,7 @@ describe("HomeTitle unit tests", async () => {
 
     expect(wrapper).toBeDefined();
   });
+
   it("should match the snapshot", () => {
     const wrapper = sut.html();
 
@@ -24,7 +25,7 @@ describe("HomeTitle unit tests", async () => {
 
   it("should render the component with the correct title", () => {
     const wrapper = sut.text();
-    
+
     expect(wrapper).toContain(titleMock);
   });
 
@@ -32,5 +33,5 @@ describe("HomeTitle unit tests", async () => {
     const wrapper = sut.classes();
 
     expect(wrapper).toContain("text-5xl");
-  })
+  });
 });

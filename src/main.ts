@@ -4,11 +4,11 @@ import "./styles/typography.scss";
 import App from "./App.vue";
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiGithub } from "oh-vue-icons/icons";
+import { BiEyedropper } from "oh-vue-icons/icons";
 import { createPinia } from "pinia";
 import router from "./router";
 
-addIcons(BiGithub);
+addIcons(BiEyedropper);
 
 const app = createApp(App);
 const pinia = createPinia();

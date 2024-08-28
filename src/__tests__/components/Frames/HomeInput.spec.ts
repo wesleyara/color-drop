@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, beforeEach } from "vitest";
 import { mount, VueWrapper } from "@vue/test-utils";
-import HomeView from "../../views/HomeView.vue";
+import HomeInput from "../../../components/Frames/HomeInput.vue";
 import { createPinia, setActivePinia } from "pinia";
 
-describe("HomeView unit tests", async () => {
+describe("HomeInput unit tests", async () => {
   let sut: VueWrapper<any>;
 
   beforeEach(async () => {
     setActivePinia(createPinia());
-    sut = mount(HomeView);
+    sut = mount(HomeInput);
   });
 
   it("should render the component", () => {
@@ -27,12 +27,12 @@ describe("HomeView unit tests", async () => {
   it("should have a class", () => {
     const wrapper = sut.classes();
 
-    expect(wrapper).toContain("flex");
+    expect(wrapper).toContain("custom-file-upload");
   });
 
-  it("should have a main element", () => {
-    const wrapper = sut.find("main");
+  it("should have a input", () => {
+    const wrapper = sut.find("input");
 
-    expect(wrapper.exists()).toBeTruthy();
+    expect(wrapper.exists()).toBe(true);
   });
 });

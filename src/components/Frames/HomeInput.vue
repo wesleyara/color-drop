@@ -27,7 +27,7 @@ const fileStore = useFileStore();
     <div class="text">
       <span>Click to upload image</span>
     </div>
-    <input type="file" id="file" @change="fileStore.handleFileChange" />
+    <input data-cy="file-input" type="file" id="file" @change="fileStore.handleFileChange" />
   </label>
 </template>
 

@@ -20,8 +20,13 @@ export const useFileStore = defineStore("file", () => {
     }
   };
 
+  const clearFile = () => {
+    file.value = null;
+  }
+
   return {
     file,
     handleFileChange,
+    clearFile,
   };
 });

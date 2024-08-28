@@ -2,11 +2,13 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { mount, VueWrapper } from "@vue/test-utils";
 import HomeDropper from "../../../components/Frames/HomeDropper.vue";
+import { createPinia, setActivePinia } from "pinia";
 
 describe("HomeDropper unit tests", async () => {
   let sut: VueWrapper<any>;
 
   beforeEach(async () => {
+    setActivePinia(createPinia());
     sut = mount(HomeDropper);
   });
 

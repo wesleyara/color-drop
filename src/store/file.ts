@@ -12,7 +12,6 @@ export const useFileStore = defineStore("file", () => {
       const reader = new FileReader();
       reader.onload = () => {
         file.value = reader.result as string;
-        console.log(file.value);
       };
       reader.readAsDataURL(files[0]);
     } else {

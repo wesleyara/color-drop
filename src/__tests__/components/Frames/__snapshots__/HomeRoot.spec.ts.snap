@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HomeRoot unit tests > should match the snapshot 1`] = `"<main class="flex flex-col items-center justify-center gap-5"></main>"`;

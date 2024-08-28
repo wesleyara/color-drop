@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, beforeEach } from "vitest";
 import { mount, VueWrapper } from "@vue/test-utils";
-import HomeDropper from "../../../components/Frames/HomeDropper.vue";
+import HomeImageRender from "../../../components/Frames/HomeImageRender.vue";
 import { createPinia, setActivePinia } from "pinia";
 
-describe("HomeDropper unit tests", async () => {
+describe("HomeImageRender unit tests", async () => {
   let sut: VueWrapper<any>;
 
   beforeEach(async () => {
     setActivePinia(createPinia());
-    sut = mount(HomeDropper);
+    sut = mount(HomeImageRender);
   });
 
   it("should render the component", () => {
@@ -33,6 +33,6 @@ describe("HomeDropper unit tests", async () => {
   it("should have a class", () => {
     const wrapper = sut.classes();
 
-    expect(wrapper).toContain("mt-6");
+    expect(wrapper).toContain("relative");
   });
 });

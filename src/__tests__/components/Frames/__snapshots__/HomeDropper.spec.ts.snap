@@ -1,8 +1,8 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`HomeDropper unit tests > should match the snapshot 1`] = `
-"<button disabled="">
+"<button disabled="" class="mt-6">
   <v-icon class="h-8 w-8" name="bi-eyedropper"></v-icon>
 </button>
-<span></span>"
+<span class="mt-6"></span>"
 `;

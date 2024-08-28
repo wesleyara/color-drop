@@ -27,10 +27,4 @@ describe("HomeDropper unit tests", async () => {
 
     expect(wrapper.exists()).toBe(true);
   });
-
-  it("should have a class", () => {
-    const wrapper = sut.classes();
-
-    expect(wrapper).toContain("mt-6");
-  });
 });

@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HomeView unit tests > should match the snapshot 1`] = `
+"<main class="flex flex-col items-center justify-center gap-5">
+  <h1 class="text-5xl">Color Drop</h1>
+</main>"
+`;

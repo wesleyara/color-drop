@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`HomeTitle unit tests > should match the snapshot 1`] = `"<h1 class="text-5xl">Color Drop</h1>"`;

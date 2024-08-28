@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import HomeRoot from "../components/Frames/HomeRoot.vue";
-import HomeTitle from "../components/Frames/HomeTitle.vue";
+import HomeHead from "../components/Frames/HomeHead.vue";
 </script>
 
 <template>
   <HomeRoot>
-    <HomeTitle />
+    <HomeHead />
   </HomeRoot>
 </template>

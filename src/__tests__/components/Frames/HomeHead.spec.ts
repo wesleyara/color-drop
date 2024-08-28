@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect, beforeEach } from "vitest";
 import { mount, VueWrapper } from "@vue/test-utils";
-import HomeTitle from "../../../components/Frames/HomeTitle.vue";
+import HomeHead from "../../../components/Frames/HomeHead.vue";
 
-describe("HomeTitle unit tests", async () => {
+describe("HomeHead unit tests", async () => {
   let sut: VueWrapper<any>;
   const titleMock = "Color Drop";
 
   beforeEach(async () => {
-    sut = mount(HomeTitle);
+    sut = mount(HomeHead);
   });
 
   it("should render the component", () => {
@@ -32,6 +32,6 @@ describe("HomeTitle unit tests", async () => {
   it("should have a class", () => {
     const wrapper = sut.classes();
 
-    expect(wrapper).toContain("text-5xl");
+    expect(wrapper).toContain("flex");
   });
 });
